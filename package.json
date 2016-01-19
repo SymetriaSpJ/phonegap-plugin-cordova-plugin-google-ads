@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-google-ads",
+  "version": "0.0.1",
+  "description": "Google Analytics Plugin with Ads",
+  "cordova": {
+    "id": "cordova-plugin-google-ads",
+    "platforms": [ "android" ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astanecki/cordova-plugin-google-ads.git"
+  },
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "analytics"
+  ],
+  "author": "Adrian Stanecki",
+  "license": "MIT"
+}
