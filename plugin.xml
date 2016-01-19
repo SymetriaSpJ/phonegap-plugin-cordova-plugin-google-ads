@@ -14,6 +14,34 @@
         <clobbers target="analytics" />
     </js-module>
 
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="UniversalAnalytics">
+                <param name="ios-package" value="UniversalAnalyticsPlugin" />
+            </feature>
+        </config-file>
+
+        <header-file src="ios/UniversalAnalyticsPlugin.h" />
+        <source-file src="ios/UniversalAnalyticsPlugin.m" />
+        <source-file src="ios/libGoogleAnalyticsServices.a" framework="true" />
+        <header-file src="ios/GAIDictionaryBuilder.h" />
+        <header-file src="ios/GAIFields.h" />
+        <header-file src="ios/GAILogger.h" />
+        <header-file src="ios/GAITrackedViewController.h" />
+        <header-file src="ios/GAI.h" />
+        <header-file src="ios/GAITracker.h" />
+        <header-file src="ios/GAIEcommerceFields.h" />
+        <header-file src="ios/GAIEcommerceProduct.h" />
+        <header-file src="ios/GAIEcommerceProductAction.h" />
+        <header-file src="ios/GAIEcommercePromotion.h" />
+
+
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CoreData.framework" />
+        <framework src="libz.dylib" />
+        <framework src="libsqlite3.dylib" />
+    </platform>
+
     <platform name="android">
         <framework src="com.google.android.gms:play-services-analytics:+" />
 
