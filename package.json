@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-google-ads",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Google Analytics Plugin with Ads",
   "cordova": {
     "id": "cordova-plugin-google-ads",
