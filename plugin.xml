@@ -10,10 +10,19 @@
     <description>Extended Universal Google Analytics Plugin by Ads feature</description>
     <author>Adrian Stanecki</author>
     <license>MIT License</license>
+
     <js-module src="www/analytics.js" name="UniversalAnalytics">
         <clobbers target="analytics" />
     </js-module>
 
+    <!-- Browser platform-->
+    <platform name="browser">
+        <js-module src="www/analytics.js" name="UniversalAnalytics">
+            <clobbers target="analytics" />
+        </js-module>
+    </platform>
+
+    <!-- iOS platform -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="UniversalAnalytics">
@@ -42,6 +51,7 @@
         <framework src="libsqlite3.dylib" />
     </platform>
 
+    <!--Android platform-->
     <platform name="android">
         <framework src="com.google.android.gms:play-services-analytics:+" />
 
