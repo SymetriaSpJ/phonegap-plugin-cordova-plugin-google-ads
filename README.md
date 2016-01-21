@@ -36,5 +36,5 @@ Collecting Advertising / demographic data in Google Analytics:
 #Building via Phonegap Build
 Copy the files manually into your project and add the following to your config.xml files:
 ```xml
-<plugin name="cordova-plugin-google-ads" spec="1.0.1" />
+<plugin name="cordova-plugin-google-ads" spec="1.0.2" />
 ```
